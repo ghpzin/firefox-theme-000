@@ -1,5 +1,9 @@
 # firefox-theme-000
 
+## SCREENSHOTS
+
+<img src="https://github.com/ghpzin/firefox-theme-000/blob/main/screenshots/theme_01.png">
+
 ## DESCRIPTION
 
 Firefox theme mainly with black background and high contrast white/colored foreground elements.
