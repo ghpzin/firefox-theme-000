@@ -1,0 +1,18 @@
+html#main-window body {
+  --custom-titlebar-bg-color: #000;
+  --custom-tab-bg-color: #000;
+  --custom-urlbar-bg-color: #000;
+  --custom-navbar-bg-color: var(--custom-titlebar-bg-color);
+  --custom-identity-bg-color: #000;
+
+  --custom-context-menu-bg-color: #000;
+  --custom-context-menu-hover-bg-color: #111;
+
+  --custom-sidebar-color: #000;
+  --custom-sidebar-splitter-color: #000;
+  
+  --tab-loading-fill: #fff !important;
+  --cfr-active-color: #fff !important;
+  --toolbar-field-focus-border-color: hsla(0, 0%, 100%, 00%) !important;
+  --arrowpanel-background: #000 !important;
+}

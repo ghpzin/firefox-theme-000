@@ -1,0 +1,61 @@
+.tab-secondary-label {
+  display: none !important;
+}
+
+.tab-icon-overlay:not([pinned], [sharing], [crashed]):is([soundplaying], [muted], [activemedia-blocked]) {
+  background-color: #000 !important;
+  opacity: 1 !important;
+}
+
+#identity-icon-label[value="Extension (external_handler)"] {
+  visibility: collapse;
+}
+
+/*fix for color tab background*/
+.tabbrowser-tab .tab-background {
+  border: none !important;
+}
+
+/*fix shadow and outline on tab RMB*/
+#tabbrowser-tabs:not([noshadowfortests])
+  .tab-background:is([selected], [multiselected]) {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.tabbrowser-tab .tab-close-button {
+  display: none !important;
+}
+
+#scrollbutton-down,
+#scrollbutton-up {
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.tabbrowser-tab[fadein]:not([pinned]):not([style*="max-width"]) {
+  max-width: calc(100% - 100px) !important;
+}
+
+#tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
+  > #tabbrowser-arrowscrollbox
+  > .tabbrowser-tab[first-visible-unpinned-tab] {
+  margin-inline-start: 0 !important;
+}
+
+.tab-icon-overlay:not([pinned], [sharing], [crashed]) {
+  padding: 0 !important;
+}
+
+#TabsToolbar {
+  --tab-min-height: 30px !important;
+}
+
+.tab-background {
+  margin: 0 0 0 0 !important;
+}
+
+.tabbrowser-tab {
+  --tab-label-mask-size: 9px !important;
+  --tab-min-width: 79px !important;
+}

@@ -1,0 +1,7 @@
+@import "userChrome/theme_vars.css";
+@import "userChrome/tab_color_vars.css";
+@import "userChrome/tab_color.css";
+@import "userChrome/theme.css";
+@import "userChrome/context_menu.css";
+@import "userChrome/sidebar.css";
+@import "userChrome/misc.css";

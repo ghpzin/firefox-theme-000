@@ -1,0 +1,16 @@
+#sidebar-box {
+  --sidebar-background-color: var(--custom-sidebar-color) !important;
+}
+
+#sidebar-header {
+  padding: 0;
+}
+
+#sidebar {
+  min-width: 0 !important;
+}
+
+#sidebar-splitter {
+  background-color: var(--custom-sidebar-splitter-color) !important;
+  width: 9px !important;
+}

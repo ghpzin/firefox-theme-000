@@ -1,0 +1,347 @@
+.tabbrowser-tab[label*="⡀"] .tab-stack {
+  --custom-tab-color-by-url-hue: 0;
+}
+.tabbrowser-tab[label*="⡁"] .tab-stack {
+  --custom-tab-color-by-url-hue: 5;
+}
+.tabbrowser-tab[label*="⡂"] .tab-stack {
+  --custom-tab-color-by-url-hue: 10;
+}
+.tabbrowser-tab[label*="⡃"] .tab-stack {
+  --custom-tab-color-by-url-hue: 15;
+}
+.tabbrowser-tab[label*="⡄"] .tab-stack {
+  --custom-tab-color-by-url-hue: 20;
+}
+.tabbrowser-tab[label*="⡅"] .tab-stack {
+  --custom-tab-color-by-url-hue: 25;
+}
+.tabbrowser-tab[label*="⡆"] .tab-stack {
+  --custom-tab-color-by-url-hue: 30;
+}
+.tabbrowser-tab[label*="⡇"] .tab-stack {
+  --custom-tab-color-by-url-hue: 35;
+}
+.tabbrowser-tab[label*="⡈"] .tab-stack {
+  --custom-tab-color-by-url-hue: 40;
+}
+.tabbrowser-tab[label*="⡉"] .tab-stack {
+  --custom-tab-color-by-url-hue: 45;
+}
+.tabbrowser-tab[label*="⡊"] .tab-stack {
+  --custom-tab-color-by-url-hue: 50;
+}
+.tabbrowser-tab[label*="⡋"] .tab-stack {
+  --custom-tab-color-by-url-hue: 55;
+}
+.tabbrowser-tab[label*="⡌"] .tab-stack {
+  --custom-tab-color-by-url-hue: 60;
+}
+.tabbrowser-tab[label*="⡍"] .tab-stack {
+  --custom-tab-color-by-url-hue: 65;
+}
+.tabbrowser-tab[label*="⡎"] .tab-stack {
+  --custom-tab-color-by-url-hue: 70;
+}
+.tabbrowser-tab[label*="⡏"] .tab-stack {
+  --custom-tab-color-by-url-hue: 75;
+}
+.tabbrowser-tab[label*="⡐"] .tab-stack {
+  --custom-tab-color-by-url-hue: 80;
+}
+.tabbrowser-tab[label*="⡑"] .tab-stack {
+  --custom-tab-color-by-url-hue: 85;
+}
+.tabbrowser-tab[label*="⡒"] .tab-stack {
+  --custom-tab-color-by-url-hue: 90;
+}
+.tabbrowser-tab[label*="⡓"] .tab-stack {
+  --custom-tab-color-by-url-hue: 95;
+}
+.tabbrowser-tab[label*="⡔"] .tab-stack {
+  --custom-tab-color-by-url-hue: 100;
+}
+.tabbrowser-tab[label*="⡕"] .tab-stack {
+  --custom-tab-color-by-url-hue: 105;
+}
+.tabbrowser-tab[label*="⡖"] .tab-stack {
+  --custom-tab-color-by-url-hue: 110;
+}
+.tabbrowser-tab[label*="⡗"] .tab-stack {
+  --custom-tab-color-by-url-hue: 115;
+}
+.tabbrowser-tab[label*="⡘"] .tab-stack {
+  --custom-tab-color-by-url-hue: 120;
+}
+.tabbrowser-tab[label*="⡙"] .tab-stack {
+  --custom-tab-color-by-url-hue: 125;
+}
+.tabbrowser-tab[label*="⡚"] .tab-stack {
+  --custom-tab-color-by-url-hue: 130;
+}
+.tabbrowser-tab[label*="⡛"] .tab-stack {
+  --custom-tab-color-by-url-hue: 135;
+}
+.tabbrowser-tab[label*="⡜"] .tab-stack {
+  --custom-tab-color-by-url-hue: 140;
+}
+.tabbrowser-tab[label*="⡝"] .tab-stack {
+  --custom-tab-color-by-url-hue: 145;
+}
+.tabbrowser-tab[label*="⡞"] .tab-stack {
+  --custom-tab-color-by-url-hue: 150;
+}
+.tabbrowser-tab[label*="⡟"] .tab-stack {
+  --custom-tab-color-by-url-hue: 155;
+}
+.tabbrowser-tab[label*="⡠"] .tab-stack {
+  --custom-tab-color-by-url-hue: 160;
+}
+.tabbrowser-tab[label*="⡡"] .tab-stack {
+  --custom-tab-color-by-url-hue: 165;
+}
+.tabbrowser-tab[label*="⡢"] .tab-stack {
+  --custom-tab-color-by-url-hue: 170;
+}
+.tabbrowser-tab[label*="⡣"] .tab-stack {
+  --custom-tab-color-by-url-hue: 175;
+}
+.tabbrowser-tab[label*="⡤"] .tab-stack {
+  --custom-tab-color-by-url-hue: 180;
+}
+.tabbrowser-tab[label*="⡥"] .tab-stack {
+  --custom-tab-color-by-url-hue: 185;
+}
+.tabbrowser-tab[label*="⡦"] .tab-stack {
+  --custom-tab-color-by-url-hue: 190;
+}
+.tabbrowser-tab[label*="⡧"] .tab-stack {
+  --custom-tab-color-by-url-hue: 195;
+}
+.tabbrowser-tab[label*="⡨"] .tab-stack {
+  --custom-tab-color-by-url-hue: 200;
+}
+.tabbrowser-tab[label*="⡩"] .tab-stack {
+  --custom-tab-color-by-url-hue: 205;
+}
+.tabbrowser-tab[label*="⡪"] .tab-stack {
+  --custom-tab-color-by-url-hue: 210;
+}
+.tabbrowser-tab[label*="⡫"] .tab-stack {
+  --custom-tab-color-by-url-hue: 215;
+}
+.tabbrowser-tab[label*="⡬"] .tab-stack {
+  --custom-tab-color-by-url-hue: 220;
+}
+.tabbrowser-tab[label*="⡭"] .tab-stack {
+  --custom-tab-color-by-url-hue: 225;
+}
+.tabbrowser-tab[label*="⡮"] .tab-stack {
+  --custom-tab-color-by-url-hue: 230;
+}
+.tabbrowser-tab[label*="⡯"] .tab-stack {
+  --custom-tab-color-by-url-hue: 235;
+}
+.tabbrowser-tab[label*="⡰"] .tab-stack {
+  --custom-tab-color-by-url-hue: 240;
+}
+.tabbrowser-tab[label*="⡱"] .tab-stack {
+  --custom-tab-color-by-url-hue: 245;
+}
+.tabbrowser-tab[label*="⡲"] .tab-stack {
+  --custom-tab-color-by-url-hue: 250;
+}
+.tabbrowser-tab[label*="⡳"] .tab-stack {
+  --custom-tab-color-by-url-hue: 255;
+}
+.tabbrowser-tab[label*="⡴"] .tab-stack {
+  --custom-tab-color-by-url-hue: 260;
+}
+.tabbrowser-tab[label*="⡵"] .tab-stack {
+  --custom-tab-color-by-url-hue: 265;
+}
+.tabbrowser-tab[label*="⡶"] .tab-stack {
+  --custom-tab-color-by-url-hue: 270;
+}
+.tabbrowser-tab[label*="⡷"] .tab-stack {
+  --custom-tab-color-by-url-hue: 275;
+}
+.tabbrowser-tab[label*="⡸"] .tab-stack {
+  --custom-tab-color-by-url-hue: 280;
+}
+.tabbrowser-tab[label*="⡹"] .tab-stack {
+  --custom-tab-color-by-url-hue: 285;
+}
+.tabbrowser-tab[label*="⡺"] .tab-stack {
+  --custom-tab-color-by-url-hue: 290;
+}
+.tabbrowser-tab[label*="⡻"] .tab-stack {
+  --custom-tab-color-by-url-hue: 295;
+}
+.tabbrowser-tab[label*="⡼"] .tab-stack {
+  --custom-tab-color-by-url-hue: 300;
+}
+.tabbrowser-tab[label*="⡽"] .tab-stack {
+  --custom-tab-color-by-url-hue: 305;
+}
+.tabbrowser-tab[label*="⡾"] .tab-stack {
+  --custom-tab-color-by-url-hue: 310;
+}
+.tabbrowser-tab[label*="⡿"] .tab-stack {
+  --custom-tab-color-by-url-hue: 315;
+}
+.tabbrowser-tab[label*="⢀"] .tab-stack {
+  --custom-tab-color-by-url-hue: 320;
+}
+.tabbrowser-tab[label*="⢁"] .tab-stack {
+  --custom-tab-color-by-url-hue: 325;
+}
+.tabbrowser-tab[label*="⢂"] .tab-stack {
+  --custom-tab-color-by-url-hue: 330;
+}
+.tabbrowser-tab[label*="⢃"] .tab-stack {
+  --custom-tab-color-by-url-hue: 335;
+}
+.tabbrowser-tab[label*="⢄"] .tab-stack {
+  --custom-tab-color-by-url-hue: 340;
+}
+.tabbrowser-tab[label*="⢅"] .tab-stack {
+  --custom-tab-color-by-url-hue: 345;
+}
+.tabbrowser-tab[label*="⢆"] .tab-stack {
+  --custom-tab-color-by-url-hue: 350;
+}
+.tabbrowser-tab[label*="⢇"] .tab-stack {
+  --custom-tab-color-by-url-hue: 355;
+}
+.tabbrowser-tab[label*="⢈"] .tab-stack {
+  --custom-tab-color-by-url-hue: 360;
+}
+
+.tabbrowser-tab[label*="⢐"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 0%;
+}
+.tabbrowser-tab[label*="⢑"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 5%;
+}
+.tabbrowser-tab[label*="⢒"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 10%;
+}
+.tabbrowser-tab[label*="⢓"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 15%;
+}
+.tabbrowser-tab[label*="⢔"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 20%;
+}
+.tabbrowser-tab[label*="⢕"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 25%;
+}
+.tabbrowser-tab[label*="⢖"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 30%;
+}
+.tabbrowser-tab[label*="⢗"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 35%;
+}
+.tabbrowser-tab[label*="⢘"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 40%;
+}
+.tabbrowser-tab[label*="⢙"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 45%;
+}
+.tabbrowser-tab[label*="⢚"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 50%;
+}
+.tabbrowser-tab[label*="⢛"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 55%;
+}
+.tabbrowser-tab[label*="⢜"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 60%;
+}
+.tabbrowser-tab[label*="⢝"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 65%;
+}
+.tabbrowser-tab[label*="⢞"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 70%;
+}
+.tabbrowser-tab[label*="⢟"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 75%;
+}
+.tabbrowser-tab[label*="⢠"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 80%;
+}
+.tabbrowser-tab[label*="⢡"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 85%;
+}
+.tabbrowser-tab[label*="⢢"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 90%;
+}
+.tabbrowser-tab[label*="⢣"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 95%;
+}
+.tabbrowser-tab[label*="⢤"] .tab-stack {
+  --custom-tab-color-by-url-saturation: 100%;
+}
+
+.tabbrowser-tab[label*="⢰"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 0%;
+}
+.tabbrowser-tab[label*="⢱"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 5%;
+}
+.tabbrowser-tab[label*="⢲"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 10%;
+}
+.tabbrowser-tab[label*="⢳"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 15%;
+}
+.tabbrowser-tab[label*="⢴"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 20%;
+}
+.tabbrowser-tab[label*="⢵"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 25%;
+}
+.tabbrowser-tab[label*="⢶"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 30%;
+}
+.tabbrowser-tab[label*="⢷"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 35%;
+}
+.tabbrowser-tab[label*="⢸"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 40%;
+}
+.tabbrowser-tab[label*="⢹"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 45%;
+}
+.tabbrowser-tab[label*="⢺"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 50%;
+}
+.tabbrowser-tab[label*="⢻"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 55%;
+}
+.tabbrowser-tab[label*="⢼"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 60%;
+}
+.tabbrowser-tab[label*="⢽"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 65%;
+}
+.tabbrowser-tab[label*="⢾"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 70%;
+}
+.tabbrowser-tab[label*="⢿"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 75%;
+}
+.tabbrowser-tab[label*="⣀"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 80%;
+}
+.tabbrowser-tab[label*="⣁"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 85%;
+}
+.tabbrowser-tab[label*="⣂"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 90%;
+}
+.tabbrowser-tab[label*="⣃"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 95%;
+}
+.tabbrowser-tab[label*="⣄"] .tab-stack {
+  --custom-tab-color-by-url-lightness: 100%;
+}

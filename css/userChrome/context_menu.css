@@ -1,0 +1,47 @@
+/*DISABLE CONTEXTMENU ITEMS*/
+#tabContextMenu #context_openANewTab,
+#tabContextMenu #context_reloadTab,
+#tabContextMenu #context_bookmarkTab,
+#tabContextMenu #context_closeTab {
+  display: none !important;
+}
+
+/*APPEARENCE*/
+#contentAreaContextMenu menuitem,
+#contentAreaContextMenu menu,
+#tabContextMenu menuitem,
+#tabContextMenu menu {
+  appearance: none !important;
+  background-color: var(--custom-context-menu-bg-color) !important;
+}
+
+#contentAreaContextMenu menuitem:hover,
+#contentAreaContextMenu menu:hover,
+#tabContextMenu menuitem:hover,
+#tabContextMenu menu:hover {
+  background-color: var(--custom-context-menu-hover-bg-color) !important;
+}
+#contentAreaContextMenu menuseparator,
+#tabContextMenu menuseparator {
+  display: none !important;
+}
+
+/*hide icons and fix padding*/
+#tabContextMenu menu,
+#tabContextMenu menuitem {
+  padding: 3px 3px !important;
+}
+
+#contentAreaContextMenu menu,
+#contentAreaContextMenu menuitem {
+  padding: 4px 6px !important;
+}
+
+#tabContextMenu hbox.menu-iconic-left {
+  display: none !important;
+}
+
+#tabContextMenu label.menu-iconic-text,
+#tabContextMenu label.menu-text {
+  margin-inline-start: 12px !important;
+}

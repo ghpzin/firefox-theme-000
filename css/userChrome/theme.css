@@ -1,0 +1,32 @@
+/*TITLEBAR*/
+/*---MAIN COLOR*/
+#titlebar #TabsToolbar {
+  background: var(--custom-titlebar-bg-color);
+}
+/*---TAB COLOR*/
+.tabbrowser-tab .tab-background,
+.tabbrowser-tab {
+  background: var(--custom-tab-bg-color) !important;
+}
+
+/*NAV-BAR*/
+/*---MAIN COLOR*/
+#nav-bar {
+  background: var(--custom-navbar-bg-color) !important;
+}
+
+/*---URL BAR*/
+#urlbar-background {
+  background: var(--custom-urlbar-bg-color) !important;
+}
+
+/*---IDENTITY BOX*/
+#identity-icon-box 
+{
+  background: var(--custom-identity-bg-color) !important;
+}
+
+/*PAGE LOADING BACKGROUND*/
+#tabbrowser-tabbox #tabbrowser-tabpanels {
+  background-color: #000 !important;
+}

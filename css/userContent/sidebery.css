@@ -1,0 +1,628 @@
+@-moz-document url-prefix("moz-extension://d4b29ac2-273e-40c7-a5e4-249dde6d52f2/sidebar/index.html")
+{
+  #root {
+    /*sidebar background image*/
+    --bg-img: none !important;
+    /*sidebar background color*/
+    --bg: #000 !important;
+    /*tabs height*/
+    --tabs-height: 27px !important;
+    /**context menu bg color*/
+    --ctx-menu-bg: #000 !important;
+    /*font color for tab items*/
+    --tabs-fg: #fff !important;
+    /*font color for tab items on hover*/
+    --tabs-fg-hover: #fff !important;
+    /*tabs indent for tree level, 24px should be around favicon width*/
+    --tabs-indent: 24px !important;
+    /*color of "placeholder" favicons, like firefox logo*/
+    --favicons-placeholder-bg: #888 !important;
+    /*color of "dot" indicator before items after 0 tree level*/
+    --tabs-lvl-indicator-bg: #fff !important;
+    /*default HSL values if there is none on tab title*/
+    --custom-tab-color-by-url-hue: 0;
+    --custom-tab-color-by-url-saturation: 0%;
+    --custom-tab-color-by-url-lightness: 50%;
+    /*transition duration for "sliding" on item selection*/
+    --custom-tab-trans-duration: 0.3s;
+  }
+
+  .Tab .fav > .child-count {
+    font-weight: bold !important;
+  }
+
+  .Tab[data-active] {
+    --tabs-lvl-indicator-bg: #000 !important;
+  }
+
+  .Tab[data-active] .audio > svg {
+    fill: #000 !important;
+  }
+
+  .Tab .title {
+    transition: color var(--custom-tab-trans-duration) linear 0s !important;
+  }
+
+  .Tab {
+    transition: background-size var(--custom-tab-trans-duration) linear 0s !important;
+    background: #000 !important;
+    background-image: linear-gradient(
+      90deg,
+      var(--custom-tab-color-by-url),
+      var(--custom-tab-color-by-url)
+    ) !important;
+    background-repeat: no-repeat !important;
+    background-size: 0% 100% !important;
+  }
+
+  .Tab[data-active] {
+    /*--tabs-activated-bg: var(--custom-tab-color-by-url)!important;*/
+    background-size: 100% 100% !important;
+  }
+
+  .Tab:hover .lvl-wrapper {
+    border-right: 2px dotted #fff !important;
+  }
+
+  .Tab[data-selected] {
+    border-right: 3px solid #fff !important;
+  }
+
+  .Tab[data-active] .title {
+    color: #000 !important;
+    font-weight: bold !important;
+  }
+
+  .Tab .fav {
+    --active-add-padding: 2px;
+    background: #000 !important;
+    border-radius: 20% !important;
+    margin-left: calc(7px - var(--active-add-padding)) !important;
+    margin-right: calc(6px - var(--active-add-padding)) !important;
+    width: calc(16px + var(--active-add-padding) * 2) !important;
+    height: calc(16px + var(--active-add-padding) * 2) !important;
+  }
+
+  .Tab .fav .placeholder {
+    top: var(--active-add-padding) !important;
+    left: var(--active-add-padding) !important;
+  }
+
+  .Tab .fav > img {
+    padding: var(--active-add-padding) !important;
+  }
+
+  .Tab[title*="⡀"],
+  .PinnedTab[title*="⡀"] {
+    --custom-tab-color-by-url-hue: 0;
+  }
+  .Tab[title*="⡁"],
+  .PinnedTab[title*="⡁"] {
+    --custom-tab-color-by-url-hue: 5;
+  }
+  .Tab[title*="⡂"],
+  .PinnedTab[title*="⡂"] {
+    --custom-tab-color-by-url-hue: 10;
+  }
+  .Tab[title*="⡃"],
+  .PinnedTab[title*="⡃"] {
+    --custom-tab-color-by-url-hue: 15;
+  }
+  .Tab[title*="⡄"],
+  .PinnedTab[title*="⡄"] {
+    --custom-tab-color-by-url-hue: 20;
+  }
+  .Tab[title*="⡅"],
+  .PinnedTab[title*="⡅"] {
+    --custom-tab-color-by-url-hue: 25;
+  }
+  .Tab[title*="⡆"],
+  .PinnedTab[title*="⡆"] {
+    --custom-tab-color-by-url-hue: 30;
+  }
+  .Tab[title*="⡇"],
+  .PinnedTab[title*="⡇"] {
+    --custom-tab-color-by-url-hue: 35;
+  }
+  .Tab[title*="⡈"],
+  .PinnedTab[title*="⡈"] {
+    --custom-tab-color-by-url-hue: 40;
+  }
+  .Tab[title*="⡉"],
+  .PinnedTab[title*="⡉"] {
+    --custom-tab-color-by-url-hue: 45;
+  }
+  .Tab[title*="⡊"],
+  .PinnedTab[title*="⡊"] {
+    --custom-tab-color-by-url-hue: 50;
+  }
+  .Tab[title*="⡋"],
+  .PinnedTab[title*="⡋"] {
+    --custom-tab-color-by-url-hue: 55;
+  }
+  .Tab[title*="⡌"],
+  .PinnedTab[title*="⡌"] {
+    --custom-tab-color-by-url-hue: 60;
+  }
+  .Tab[title*="⡍"],
+  .PinnedTab[title*="⡍"] {
+    --custom-tab-color-by-url-hue: 65;
+  }
+  .Tab[title*="⡎"],
+  .PinnedTab[title*="⡎"] {
+    --custom-tab-color-by-url-hue: 70;
+  }
+  .Tab[title*="⡏"],
+  .PinnedTab[title*="⡏"] {
+    --custom-tab-color-by-url-hue: 75;
+  }
+  .Tab[title*="⡐"],
+  .PinnedTab[title*="⡐"] {
+    --custom-tab-color-by-url-hue: 80;
+  }
+  .Tab[title*="⡑"],
+  .PinnedTab[title*="⡑"] {
+    --custom-tab-color-by-url-hue: 85;
+  }
+  .Tab[title*="⡒"],
+  .PinnedTab[title*="⡒"] {
+    --custom-tab-color-by-url-hue: 90;
+  }
+  .Tab[title*="⡓"],
+  .PinnedTab[title*="⡓"] {
+    --custom-tab-color-by-url-hue: 95;
+  }
+  .Tab[title*="⡔"],
+  .PinnedTab[title*="⡔"] {
+    --custom-tab-color-by-url-hue: 100;
+  }
+  .Tab[title*="⡕"],
+  .PinnedTab[title*="⡕"] {
+    --custom-tab-color-by-url-hue: 105;
+  }
+  .Tab[title*="⡖"],
+  .PinnedTab[title*="⡖"] {
+    --custom-tab-color-by-url-hue: 110;
+  }
+  .Tab[title*="⡗"],
+  .PinnedTab[title*="⡗"] {
+    --custom-tab-color-by-url-hue: 115;
+  }
+  .Tab[title*="⡘"],
+  .PinnedTab[title*="⡘"] {
+    --custom-tab-color-by-url-hue: 120;
+  }
+  .Tab[title*="⡙"],
+  .PinnedTab[title*="⡙"] {
+    --custom-tab-color-by-url-hue: 125;
+  }
+  .Tab[title*="⡚"],
+  .PinnedTab[title*="⡚"] {
+    --custom-tab-color-by-url-hue: 130;
+  }
+  .Tab[title*="⡛"],
+  .PinnedTab[title*="⡛"] {
+    --custom-tab-color-by-url-hue: 135;
+  }
+  .Tab[title*="⡜"],
+  .PinnedTab[title*="⡜"] {
+    --custom-tab-color-by-url-hue: 140;
+  }
+  .Tab[title*="⡝"],
+  .PinnedTab[title*="⡝"] {
+    --custom-tab-color-by-url-hue: 145;
+  }
+  .Tab[title*="⡞"],
+  .PinnedTab[title*="⡞"] {
+    --custom-tab-color-by-url-hue: 150;
+  }
+  .Tab[title*="⡟"],
+  .PinnedTab[title*="⡟"] {
+    --custom-tab-color-by-url-hue: 155;
+  }
+  .Tab[title*="⡠"],
+  .PinnedTab[title*="⡠"] {
+    --custom-tab-color-by-url-hue: 160;
+  }
+  .Tab[title*="⡡"],
+  .PinnedTab[title*="⡡"] {
+    --custom-tab-color-by-url-hue: 165;
+  }
+  .Tab[title*="⡢"],
+  .PinnedTab[title*="⡢"] {
+    --custom-tab-color-by-url-hue: 170;
+  }
+  .Tab[title*="⡣"],
+  .PinnedTab[title*="⡣"] {
+    --custom-tab-color-by-url-hue: 175;
+  }
+  .Tab[title*="⡤"],
+  .PinnedTab[title*="⡤"] {
+    --custom-tab-color-by-url-hue: 180;
+  }
+  .Tab[title*="⡥"],
+  .PinnedTab[title*="⡥"] {
+    --custom-tab-color-by-url-hue: 185;
+  }
+  .Tab[title*="⡦"],
+  .PinnedTab[title*="⡦"] {
+    --custom-tab-color-by-url-hue: 190;
+  }
+  .Tab[title*="⡧"],
+  .PinnedTab[title*="⡧"] {
+    --custom-tab-color-by-url-hue: 195;
+  }
+  .Tab[title*="⡨"],
+  .PinnedTab[title*="⡨"] {
+    --custom-tab-color-by-url-hue: 200;
+  }
+  .Tab[title*="⡩"],
+  .PinnedTab[title*="⡩"] {
+    --custom-tab-color-by-url-hue: 205;
+  }
+  .Tab[title*="⡪"],
+  .PinnedTab[title*="⡪"] {
+    --custom-tab-color-by-url-hue: 210;
+  }
+  .Tab[title*="⡫"],
+  .PinnedTab[title*="⡫"] {
+    --custom-tab-color-by-url-hue: 215;
+  }
+  .Tab[title*="⡬"],
+  .PinnedTab[title*="⡬"] {
+    --custom-tab-color-by-url-hue: 220;
+  }
+  .Tab[title*="⡭"],
+  .PinnedTab[title*="⡭"] {
+    --custom-tab-color-by-url-hue: 225;
+  }
+  .Tab[title*="⡮"],
+  .PinnedTab[title*="⡮"] {
+    --custom-tab-color-by-url-hue: 230;
+  }
+  .Tab[title*="⡯"],
+  .PinnedTab[title*="⡯"] {
+    --custom-tab-color-by-url-hue: 235;
+  }
+  .Tab[title*="⡰"],
+  .PinnedTab[title*="⡰"] {
+    --custom-tab-color-by-url-hue: 240;
+  }
+  .Tab[title*="⡱"],
+  .PinnedTab[title*="⡱"] {
+    --custom-tab-color-by-url-hue: 245;
+  }
+  .Tab[title*="⡲"],
+  .PinnedTab[title*="⡲"] {
+    --custom-tab-color-by-url-hue: 250;
+  }
+  .Tab[title*="⡳"],
+  .PinnedTab[title*="⡳"] {
+    --custom-tab-color-by-url-hue: 255;
+  }
+  .Tab[title*="⡴"],
+  .PinnedTab[title*="⡴"] {
+    --custom-tab-color-by-url-hue: 260;
+  }
+  .Tab[title*="⡵"],
+  .PinnedTab[title*="⡵"] {
+    --custom-tab-color-by-url-hue: 265;
+  }
+  .Tab[title*="⡶"],
+  .PinnedTab[title*="⡶"] {
+    --custom-tab-color-by-url-hue: 270;
+  }
+  .Tab[title*="⡷"],
+  .PinnedTab[title*="⡷"] {
+    --custom-tab-color-by-url-hue: 275;
+  }
+  .Tab[title*="⡸"],
+  .PinnedTab[title*="⡸"] {
+    --custom-tab-color-by-url-hue: 280;
+  }
+  .Tab[title*="⡹"],
+  .PinnedTab[title*="⡹"] {
+    --custom-tab-color-by-url-hue: 285;
+  }
+  .Tab[title*="⡺"],
+  .PinnedTab[title*="⡺"] {
+    --custom-tab-color-by-url-hue: 290;
+  }
+  .Tab[title*="⡻"],
+  .PinnedTab[title*="⡻"] {
+    --custom-tab-color-by-url-hue: 295;
+  }
+  .Tab[title*="⡼"],
+  .PinnedTab[title*="⡼"] {
+    --custom-tab-color-by-url-hue: 300;
+  }
+  .Tab[title*="⡽"],
+  .PinnedTab[title*="⡽"] {
+    --custom-tab-color-by-url-hue: 305;
+  }
+  .Tab[title*="⡾"],
+  .PinnedTab[title*="⡾"] {
+    --custom-tab-color-by-url-hue: 310;
+  }
+  .Tab[title*="⡿"],
+  .PinnedTab[title*="⡿"] {
+    --custom-tab-color-by-url-hue: 315;
+  }
+  .Tab[title*="⢀"],
+  .PinnedTab[title*="⢀"] {
+    --custom-tab-color-by-url-hue: 320;
+  }
+  .Tab[title*="⢁"],
+  .PinnedTab[title*="⢁"] {
+    --custom-tab-color-by-url-hue: 325;
+  }
+  .Tab[title*="⢂"],
+  .PinnedTab[title*="⢂"] {
+    --custom-tab-color-by-url-hue: 330;
+  }
+  .Tab[title*="⢃"],
+  .PinnedTab[title*="⢃"] {
+    --custom-tab-color-by-url-hue: 335;
+  }
+  .Tab[title*="⢄"],
+  .PinnedTab[title*="⢄"] {
+    --custom-tab-color-by-url-hue: 340;
+  }
+  .Tab[title*="⢅"],
+  .PinnedTab[title*="⢅"] {
+    --custom-tab-color-by-url-hue: 345;
+  }
+  .Tab[title*="⢆"],
+  .PinnedTab[title*="⢆"] {
+    --custom-tab-color-by-url-hue: 350;
+  }
+  .Tab[title*="⢇"],
+  .PinnedTab[title*="⢇"] {
+    --custom-tab-color-by-url-hue: 355;
+  }
+  .Tab[title*="⢈"],
+  .PinnedTab[title*="⢈"] {
+    --custom-tab-color-by-url-hue: 360;
+  }
+
+  .Tab[title*="⢐"],
+  .PinnedTab[title*="⢐"] {
+    --custom-tab-color-by-url-saturation: 0%;
+  }
+  .Tab[title*="⢑"],
+  .PinnedTab[title*="⢑"] {
+    --custom-tab-color-by-url-saturation: 5%;
+  }
+  .Tab[title*="⢒"],
+  .PinnedTab[title*="⢒"] {
+    --custom-tab-color-by-url-saturation: 10%;
+  }
+  .Tab[title*="⢓"],
+  .PinnedTab[title*="⢓"] {
+    --custom-tab-color-by-url-saturation: 15%;
+  }
+  .Tab[title*="⢔"],
+  .PinnedTab[title*="⢔"] {
+    --custom-tab-color-by-url-saturation: 20%;
+  }
+  .Tab[title*="⢕"],
+  .PinnedTab[title*="⢕"] {
+    --custom-tab-color-by-url-saturation: 25%;
+  }
+  .Tab[title*="⢖"],
+  .PinnedTab[title*="⢖"] {
+    --custom-tab-color-by-url-saturation: 30%;
+  }
+  .Tab[title*="⢗"],
+  .PinnedTab[title*="⢗"] {
+    --custom-tab-color-by-url-saturation: 35%;
+  }
+  .Tab[title*="⢘"],
+  .PinnedTab[title*="⢘"] {
+    --custom-tab-color-by-url-saturation: 40%;
+  }
+  .Tab[title*="⢙"],
+  .PinnedTab[title*="⢙"] {
+    --custom-tab-color-by-url-saturation: 45%;
+  }
+  .Tab[title*="⢚"],
+  .PinnedTab[title*="⢚"] {
+    --custom-tab-color-by-url-saturation: 50%;
+  }
+  .Tab[title*="⢛"],
+  .PinnedTab[title*="⢛"] {
+    --custom-tab-color-by-url-saturation: 55%;
+  }
+  .Tab[title*="⢜"],
+  .PinnedTab[title*="⢜"] {
+    --custom-tab-color-by-url-saturation: 60%;
+  }
+  .Tab[title*="⢝"],
+  .PinnedTab[title*="⢝"] {
+    --custom-tab-color-by-url-saturation: 65%;
+  }
+  .Tab[title*="⢞"],
+  .PinnedTab[title*="⢞"] {
+    --custom-tab-color-by-url-saturation: 70%;
+  }
+  .Tab[title*="⢟"],
+  .PinnedTab[title*="⢟"] {
+    --custom-tab-color-by-url-saturation: 75%;
+  }
+  .Tab[title*="⢠"],
+  .PinnedTab[title*="⢠"] {
+    --custom-tab-color-by-url-saturation: 80%;
+  }
+  .Tab[title*="⢡"],
+  .PinnedTab[title*="⢡"] {
+    --custom-tab-color-by-url-saturation: 85%;
+  }
+  .Tab[title*="⢢"],
+  .PinnedTab[title*="⢢"] {
+    --custom-tab-color-by-url-saturation: 90%;
+  }
+  .Tab[title*="⢣"],
+  .PinnedTab[title*="⢣"] {
+    --custom-tab-color-by-url-saturation: 95%;
+  }
+  .Tab[title*="⢤"],
+  .PinnedTab[title*="⢤"] {
+    --custom-tab-color-by-url-saturation: 100%;
+  }
+
+  .Tab[title*="⢰"],
+  .PinnedTab[title*="⢰"] {
+    --custom-tab-color-by-url-lightness: 0%;
+  }
+  .Tab[title*="⢱"],
+  .PinnedTab[title*="⢱"] {
+    --custom-tab-color-by-url-lightness: 5%;
+  }
+  .Tab[title*="⢲"],
+  .PinnedTab[title*="⢲"] {
+    --custom-tab-color-by-url-lightness: 10%;
+  }
+  .Tab[title*="⢳"],
+  .PinnedTab[title*="⢳"] {
+    --custom-tab-color-by-url-lightness: 15%;
+  }
+  .Tab[title*="⢴"],
+  .PinnedTab[title*="⢴"] {
+    --custom-tab-color-by-url-lightness: 20%;
+  }
+  .Tab[title*="⢵"],
+  .PinnedTab[title*="⢵"] {
+    --custom-tab-color-by-url-lightness: 25%;
+  }
+  .Tab[title*="⢶"],
+  .PinnedTab[title*="⢶"] {
+    --custom-tab-color-by-url-lightness: 30%;
+  }
+  .Tab[title*="⢷"],
+  .PinnedTab[title*="⢷"] {
+    --custom-tab-color-by-url-lightness: 35%;
+  }
+  .Tab[title*="⢸"],
+  .PinnedTab[title*="⢸"] {
+    --custom-tab-color-by-url-lightness: 40%;
+  }
+  .Tab[title*="⢹"],
+  .PinnedTab[title*="⢹"] {
+    --custom-tab-color-by-url-lightness: 45%;
+  }
+  .Tab[title*="⢺"],
+  .PinnedTab[title*="⢺"] {
+    --custom-tab-color-by-url-lightness: 50%;
+  }
+  .Tab[title*="⢻"],
+  .PinnedTab[title*="⢻"] {
+    --custom-tab-color-by-url-lightness: 55%;
+  }
+  .Tab[title*="⢼"],
+  .PinnedTab[title*="⢼"] {
+    --custom-tab-color-by-url-lightness: 60%;
+  }
+  .Tab[title*="⢽"],
+  .PinnedTab[title*="⢽"] {
+    --custom-tab-color-by-url-lightness: 65%;
+  }
+  .Tab[title*="⢾"],
+  .PinnedTab[title*="⢾"] {
+    --custom-tab-color-by-url-lightness: 70%;
+  }
+  .Tab[title*="⢿"],
+  .PinnedTab[title*="⢿"] {
+    --custom-tab-color-by-url-lightness: 75%;
+  }
+  .Tab[title*="⣀"],
+  .PinnedTab[title*="⣀"] {
+    --custom-tab-color-by-url-lightness: 80%;
+  }
+  .Tab[title*="⣁"],
+  .PinnedTab[title*="⣁"] {
+    --custom-tab-color-by-url-lightness: 85%;
+  }
+  .Tab[title*="⣂"],
+  .PinnedTab[title*="⣂"] {
+    --custom-tab-color-by-url-lightness: 90%;
+  }
+  .Tab[title*="⣃"],
+  .PinnedTab[title*="⣃"] {
+    --custom-tab-color-by-url-lightness: 95%;
+  }
+  .Tab[title*="⣄"],
+  .PinnedTab[title*="⣄"] {
+    --custom-tab-color-by-url-lightness: 100%;
+  }
+
+  .Tab {
+    --custom-tab-color-by-url: hsl(
+      var(--custom-tab-color-by-url-hue),
+      var(--custom-tab-color-by-url-saturation),
+      var(--custom-tab-color-by-url-lightness)
+    );
+
+    border-left: 3px solid var(--custom-tab-color-by-url) !important;
+  }
+
+  .PinnedTab {
+    --custom-tab-color-by-url: hsl(
+      var(--custom-tab-color-by-url-hue),
+      var(--custom-tab-color-by-url-saturation),
+      var(--custom-tab-color-by-url-lightness)
+    );
+
+    border-bottom: 3px solid var(--custom-tab-color-by-url) !important;
+  }
+  .Tab:hover .fav {
+    opacity: 1 !important;
+  }
+
+  .Tab .fav > .child-count {
+    background: #000a !important;
+  }
+
+  .Tab[data-discarded] > .lvl-wrapper > .fav {
+    opacity: 1 !important;
+  }
+
+  .Tab[data-discarded] > .lvl-wrapper > .fav > *:not(.exp):not(.child-count),
+  .Tab[data-discarded] > .lvl-wrapper > .t-box,
+  .Tab[title*=" - discarded"]
+    > .lvl-wrapper
+    > .fav
+    > *:not(.exp):not(.child-count),
+  .Tab[title*=" - discarded"] > .lvl-wrapper > .t-box {
+    opacity: 1 !important;
+  }
+
+  .Tab[data-discarded],
+  .Tab[title*=" - discarded"] {
+    border-left: 3px dotted var(--custom-tab-color-by-url) !important;
+  }
+
+  .PinnedTab[data-discarded],
+  .PinnedTab[title*=" - discarded"] {
+    border-bottom: 3px dotted var(--custom-tab-color-by-url) !important;
+  }
+
+  .Tab .update-badge {
+    display: none !important;
+  }
+
+  .Tab .fav > .exp {
+    opacity: 0 !important;
+  }
+
+  .Tab[data-updated] .fav > img,
+  .Tab[data-pending] .fav > img {
+    mask: none !important;
+  }
+
+  .Tab .fav > .child-count {
+    font-size: 0.9rem !important;
+    width: 100% !important;
+    right: 0 !important;
+    bottom: 1px !important;
+  }
+}
