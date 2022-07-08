@@ -43,13 +43,13 @@ Without [title_add_hsl.js](./js/title_add_hsl.js) file installed and running tab
 
 ### <u>[js/title_add_hsl.js](./js/title_add_hsl.js)</u>
 
-(A) Rewrite getFavicon and getHslFromFavicon to use GM.xmlHttpRequest, so there are no CORS issues
+(A) Rewrite getFavicon and getHslFromFavicon to use GM.xmlHttpRequest, so there are no CORS issues [issue:#1](https://github.com/ghpzin/firefox-theme-000/issues/1)
 
-(B) Add save/load option for colors found from favicon as they tend not to change on same domain that frequently (most likely with GM.setValue/GM.getValue)
+(B) Add save/load option for colors found from favicon as they tend not to change on same domain that frequently (most likely with GM.setValue/GM.getValue) [issue:#2](https://github.com/ghpzin/firefox-theme-000/issues/2)
 
-(C) Think over priorities of possible favicon urls in faviconUrlStack
+(C) Rewrite parts used from ColorThief, so there are no dependencies [issue:#3](https://github.com/ghpzin/firefox-theme-000/issues/3)
 
-(D) Rewrite parts used from ColorThief, so there are no dependencies
+(D) Think over priorities of possible favicon urls in `faviconUrlStack`
 
 ### <u>[css/usercontent/sidebery.css](./css/usercontent/sidebery.css)</u>
 
